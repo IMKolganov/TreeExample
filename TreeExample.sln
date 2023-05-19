@@ -1,6 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+<<<<<<< Updated upstream
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeExample", "TreeExample\TreeExample.csproj", "{C1566C57-B018-4A33-BB11-7F8EEACEF599}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeExample", "TreeExample\TreeExample.csproj", "{868EC4DE-D59C-40B2-9749-501AF9561B59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DB", "DB\DB.csproj", "{517FD139-5DD9-42C4-B454-8519CAB02C26}"
+>>>>>>> Stashed changes
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +14,20 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< Updated upstream
 		{C1566C57-B018-4A33-BB11-7F8EEACEF599}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C1566C57-B018-4A33-BB11-7F8EEACEF599}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1566C57-B018-4A33-BB11-7F8EEACEF599}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1566C57-B018-4A33-BB11-7F8EEACEF599}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{868EC4DE-D59C-40B2-9749-501AF9561B59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{868EC4DE-D59C-40B2-9749-501AF9561B59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{868EC4DE-D59C-40B2-9749-501AF9561B59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{868EC4DE-D59C-40B2-9749-501AF9561B59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{517FD139-5DD9-42C4-B454-8519CAB02C26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{517FD139-5DD9-42C4-B454-8519CAB02C26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{517FD139-5DD9-42C4-B454-8519CAB02C26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{517FD139-5DD9-42C4-B454-8519CAB02C26}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> Stashed changes
 	EndGlobalSection
 EndGlobal
