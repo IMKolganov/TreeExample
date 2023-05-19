@@ -7,7 +7,7 @@ public class DataSeed
 
     public static IEnumerable<Entities.Application> GetApplications()
     {
-        yield return new Entities.Application { Id = 1, ApplicationName = "App1" };
+        yield return new Entities.Application() { Id = 1, ApplicationName = "App1" };
         yield return new Entities.Application { Id = 2, ApplicationName = "App2" };
         yield return new Entities.Application { Id = 3, ApplicationName = "App3" };
         yield return new Entities.Application { Id = 4, ApplicationName = "App4" };
@@ -27,24 +27,24 @@ public class DataSeed
     
     public static IEnumerable<Entities.Action> GetActions()
     {
-        yield return new Entities.Action { Id = 1, Name = "Delete", RefAppId = 1 };
-        yield return new Entities.Action { Id = 2, Name = "Edit", RefAppId = 1 };
-        yield return new Entities.Action { Id = 3, Name = "Read", RefAppId = 1 };
-        yield return new Entities.Action { Id = 4, Name = "Delete", RefAppId = 2 };
-        yield return new Entities.Action { Id = 5, Name = "Edit", RefAppId = 2 };
-        yield return new Entities.Action { Id = 6, Name = "Read", RefAppId = 2 };
-        yield return new Entities.Action { Id = 7, Name = "Delete", RefAppId = 3 };
-        yield return new Entities.Action { Id = 8, Name = "Edit", RefAppId = 3 };
-        yield return new Entities.Action { Id = 9, Name = "Read", RefAppId = 3 };
-        yield return new Entities.Action { Id = 10, Name = "Delete", RefAppId = 4 };
-        yield return new Entities.Action { Id = 11, Name = "Edit", RefAppId = 4 };
-        yield return new Entities.Action { Id = 12, Name = "Read", RefAppId = 4 };
-        yield return new Entities.Action { Id = 13, Name = "Delete", RefAppId = 5 };
-        yield return new Entities.Action { Id = 14, Name = "Edit", RefAppId = 5 };
-        yield return new Entities.Action { Id = 15, Name = "Read", RefAppId = 5 };
-        yield return new Entities.Action { Id = 16, Name = "Delete", RefAppId = 6 };
-        yield return new Entities.Action { Id = 17, Name = "Edit", RefAppId = 6 };
-        yield return new Entities.Action { Id = 18, Name = "Read", RefAppId = 6 };
+        yield return new Entities.Action(1, "Delete", 0, "");
+        yield return new Entities.Action(2, "Edit", 1, "" );
+        yield return new Entities.Action(3, "Read", 1, "" );
+        yield return new Entities.Action(4, "Delete", 2 , "" );
+        yield return new Entities.Action(5, "Edit", 2, "" );
+        yield return new Entities.Action(6, "Read", 2, "" );
+        yield return new Entities.Action(7, "Delete", 3, "" );
+        yield return new Entities.Action(8, "Edit", 3, "" );
+        yield return new Entities.Action(9, "Read", 3, "" );
+        yield return new Entities.Action(10, "Delete", 4 , "" );
+        yield return new Entities.Action(11, "Edit", 4 , "" );
+        yield return new Entities.Action(12, "Read", 4, "" );
+        yield return new Entities.Action(13, "Delete", 5 , "" );
+        yield return new Entities.Action(14, "Edit", 5, "" );
+        yield return new Entities.Action(15, "Read", 5, "" );
+        yield return new Entities.Action(16, "Delete", 6, "" );
+        yield return new Entities.Action(17, "Edit", 6, "" );
+        yield return new Entities.Action(18, "Read", 6, "" );
     }
     
 }

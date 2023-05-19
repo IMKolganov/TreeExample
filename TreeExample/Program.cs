@@ -22,8 +22,4 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-<<<<<<< Updated upstream
 app.Run();
-=======
-app.Run();
->>>>>>> Stashed changes

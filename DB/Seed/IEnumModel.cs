@@ -1,4 +1,4 @@
-﻿namespace YakimGames.BackOffice.Server.DB.Seed
+﻿namespace DB.Seed
 {
     public interface IEnumModel<TModel, TModelIdType>
     {

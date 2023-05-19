@@ -1,4 +1,4 @@
-﻿namespace YakimGames.BackOffice.Server.DB.Seed;
+﻿namespace DB.Seed;
 
 public static class EnumFunctions
 {
@@ -7,11 +7,12 @@ public static class EnumFunctions
         var enums = new List<TModel>();
         foreach (var enumVar in (TEnum[])Enum.GetValues(typeof(TEnum)))
         {
-            enums.Add(new TModel
-            {
-                Id = enumVar,
-                Name = enumVar.ToString()
-            });
+            if (enumVar != null)
+                enums.Add(new TModel
+                {
+                    Id = enumVar,
+                    Name = (enumVar.ToString()) ?? string.Empty,
+                });
         }
 
         return enums;

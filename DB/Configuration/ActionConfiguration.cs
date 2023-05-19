@@ -1,8 +1,6 @@
 ﻿using DB.Seed;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using YakimGames.BackOffice.Server.DB.Seed;
-using Entities = DB.Entities;
 
 namespace DB.Configuration;
 
