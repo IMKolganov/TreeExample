@@ -7,12 +7,12 @@ public class DataSeed
 
     public static IEnumerable<Entities.Application> GetApplications()
     {
-        yield return new Entities.Application() { Id = 1, ApplicationName = "App1" };
-        yield return new Entities.Application { Id = 2, ApplicationName = "App2" };
-        yield return new Entities.Application { Id = 3, ApplicationName = "App3" };
-        yield return new Entities.Application { Id = 4, ApplicationName = "App4" };
-        yield return new Entities.Application { Id = 5, ApplicationName = "App5" };
-        yield return new Entities.Application { Id = 6, ApplicationName = "App6" };
+        yield return new Entities.Application(1, "App1");
+        yield return new Entities.Application(2, "App2");
+        yield return new Entities.Application(3, "App3");
+        yield return new Entities.Application(4, "App4");
+        yield return new Entities.Application(5, "App5");
+        yield return new Entities.Application(6, "App6");
     }
     
     public static IEnumerable<Entities.TreeView> GetTreeViews()
