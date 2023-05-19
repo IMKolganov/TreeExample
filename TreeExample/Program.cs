@@ -27,6 +27,7 @@ builder.Services.AddScoped<IExcelExportGeneric, ExcelExportGeneric>();
 builder.Services.AddScoped<IActionRepository, ActionRepository>();
 builder.Services.AddScoped<IApplicationRepository, ApplicationRepository>();
 builder.Services.AddScoped<ITreeViewRepository, TreeViewRepository>();
+builder.Services.AddScoped<IExampleRepository, ExampleRepository>();
 
 
 builder.Services.AddScoped<IPermissionService, PermissionService>();

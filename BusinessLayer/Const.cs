@@ -1,4 +1,4 @@
-﻿namespace YakimGames.BackOffice.Server.Business;
+﻿namespace BusinessLayer;
 
 public static class Const
 {

@@ -4,38 +4,44 @@ using DB.Repositories.Interfaces;
 
 namespace DB.Repositories;
 
-public class TreeViewRepository : ITreeViewRepository
+public class ExampleRepository : IExampleRepository
 {
     private readonly ApplicationDbContext _context;
-    private readonly DbSet<TreeView> _dbSet;
+    private readonly DbSet<Example> _dbSet;
 
-    public TreeViewRepository(ApplicationDbContext context)
+    public ExampleRepository(ApplicationDbContext context)
     {
         _context = context;
-        _dbSet = context.Set<TreeView>();
+        _dbSet = context.Set<Example>();
     }
 
-    public async Task<TreeView?> Get(int id)
+    public async Task<Example?> Get(int id)
     {
         var result = await _dbSet.FindAsync(id);
         return result;
     }
     
-    public async Task<TreeView> Add(TreeView treeView)
+    public async Task<Example?> GetByIdParent(int idParent)
     {
-        await _dbSet.AddAsync(treeView);
-        await _context.SaveChangesAsync();
-        return treeView;
+        var result = _dbSet.FirstOrDefault(x => x.Id == idParent)!;
+        return result;
     }
     
-    public async Task<TreeView> Update(TreeView treeView)
+    public async Task<Example> Add(Example example)
     {
-        _dbSet.Update(treeView);
+        await _dbSet.AddAsync(example);
         await _context.SaveChangesAsync();
-        return treeView;
+        return example;
+    }
+    
+    public async Task<Example> Update(Example example)
+    {
+        _dbSet.Update(example);
+        await _context.SaveChangesAsync();
+        return example;
     }
 
-    public async Task<List<TreeView>> GetAll()
+    public async Task<List<Example>> GetAll()
     {
         return await _dbSet.ToListAsync();
     }

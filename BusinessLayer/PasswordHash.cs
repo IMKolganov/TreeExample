@@ -1,7 +1,7 @@
 ﻿
 using System.Security.Cryptography;
 
-namespace YakimGames.BackOffice.Server.Business;
+namespace BusinessLayer;
 
 public class PasswordHash
 {

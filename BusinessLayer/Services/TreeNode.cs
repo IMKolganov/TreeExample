@@ -1,4 +1,4 @@
-﻿namespace YakimGames.BackOffice.Server.Business.Services;
+﻿namespace BusinessLayer.Services;
 
 public class TreeNode<T>
 {

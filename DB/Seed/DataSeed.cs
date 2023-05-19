@@ -47,4 +47,16 @@ public class DataSeed
         yield return new Entities.Action(18, "Read", 6, "" );
     }
     
+    
+    public static IEnumerable<Entities.Example> GetExamples()
+    {
+        yield return new Entities.Example(1, 0,"Delete", 0, "");
+        yield return new Entities.Example(2, 1,"Edit", 1, "" );
+        yield return new Entities.Example(3, 2,"Read", 1, "" );
+        yield return new Entities.Example(4, 3,"Delete", 2 , "" );
+        yield return new Entities.Example(5, 4,"Edit", 2, "" );
+        yield return new Entities.Example(6, 4,"Read", 2, "" );
+        
+    }
+    
 }
